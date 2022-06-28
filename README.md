@@ -15,12 +15,12 @@ This repo contains all of my personal LeetCode solutions. The coding solutions p
 
 _All solutions were made with the sole intent of solving the corresponding LeetCode challenge. Solutions may not be as efficient as possible._
 
-
+## LeetCode Stats
+[![Leetcode Stats](https://leetcard.jacoblin.cool/shubhamsigdar)](https://leetcode.com/shubhamsigdar)
 
 ## Optimizations
 
 I consistently refactor and optimize my code, sometimes for efficiency, sometimes for readability. 
-[![Leetcode Stats](https://leetcard.jacoblin.cool/shubhamsigdar)](https://leetcode.com/shubhamsigdar)
 
 ## Lessons Learned:
 
