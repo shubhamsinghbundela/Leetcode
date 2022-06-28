@@ -18,8 +18,9 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
 ## LeetCode Stats
 <div align="center">
 
-[![Leetcode Stats](https://leetcard.jacoblin.cool/shubhamsigdar)](https://leetcode.com/shubhamsigdar)
-
+<a href="https://github.com/shubhamsigdar/Leetcode">
+  <img alt="LeetCode Stat Card" src="https://apu5rh8gxk.execute-api.us-east-1.amazonaws.com/default/leetcode-stats?username=shubhamsigdar" width="400"/>
+</a>
 </div>
 
 ## Optimizations
