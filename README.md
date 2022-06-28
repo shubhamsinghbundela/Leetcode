@@ -3,7 +3,7 @@
 <div align="center">
 <img src="https://github.com/CrutchTheClutch/LeetCode/raw/master/logo.png" width="450" height="auto"/>
 
- ![Languages](https://img.shields.io/badge/Languages-Python-red.svg?style=flat)
+ ![Language](https://img.shields.io/badge/Language-Python-orange.svg?logo=Python&logoColor=yellow)
 [![Author](https://img.shields.io/badge/Author-Shubham%20Sigdar-blue.svg?style=flat)](https://leetcode.com/shubhamsigdar/)
 
 </div>
