@@ -17,7 +17,9 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
 
 ## LeetCode Stats
 <div align="center">
+
 [![Leetcode Stats](https://leetcard.jacoblin.cool/shubhamsigdar)](https://leetcode.com/shubhamsigdar)
+
 </div>
 
 ## Optimizations
