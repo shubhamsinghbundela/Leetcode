@@ -18,7 +18,7 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
 ## LeetCode Stats
 <div align="center">
 
-<a href="https://github.com/shubhamsigdar/Leetcode">
+<a href="https://github.com/shubhamsigdar1/Leetcode">
   <img alt="LeetCode Stat Card" src="https://apu5rh8gxk.execute-api.us-east-1.amazonaws.com/default/leetcode-stats?username=shubhamsigdar" width="400"/>
 </a>
 </div>
