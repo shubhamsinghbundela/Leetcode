@@ -15,13 +15,6 @@ This repo contains all of my personal LeetCode solutions. The coding solutions p
 
 _All solutions were made with the sole intent of solving the corresponding LeetCode challenge. Solutions may not be as efficient as possible._
 
-## LeetCode Stats
-<div align="center">
-
-<a href="https://github.com/shubhamsigdar1/Leetcode">
-  <img alt="LeetCode Stat Card" src="https://apu5rh8gxk.execute-api.us-east-1.amazonaws.com/default/leetcode-stats?username=shubhamsigdar" width="400"/>
-</a>
-</div>
 
 ## Optimizations
 
