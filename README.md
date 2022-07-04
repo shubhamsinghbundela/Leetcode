@@ -15,6 +15,7 @@ This repo contains all of my personal LeetCode solutions. The coding solutions p
 
 _All solutions were made with the sole intent of solving the corresponding LeetCode challenge. Solutions may not be as efficient as possible._
 
+<<<<<<< HEAD
 <!-- ## LeetCode Stats
 <div align="center">
 
@@ -31,6 +32,8 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
         </a>
 
 </p> -->
+=======
+>>>>>>> 3daf3e807a4fdab0d88c9ad38907a5632a915055
 
 ## Optimizations
 
