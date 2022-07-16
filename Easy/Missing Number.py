@@ -29,9 +29,9 @@
 #  1. Brute force method
 n=5
 arr= 0,5,3,2,4
-sum of 0 to n -> n(n+1)//2 ->5*6//2 = 15
-sum of arr = 14
-15-14=1(1 is missing)
+# sum of 0 to n -> n(n+1)//2 ->5*6//2 = 15
+# sum of arr = 14
+# 15-14=1(1 is missing)
 def solve(n, arr):
     n=len(arr)
     return (n*(n+1))//2 - sum(arr)
@@ -40,7 +40,7 @@ def solve(n, arr):
 # 2, XOR Method
 n=6
 arr=[2,0,1,3,5,6]
-0,1,2,3,4,5^6 5 1 3 2 0 1 ->4 
+# 0,1,2,3,4,5^6 5 1 3 2 0 1 ->4 
 def solve(n, arr):
     ans = n
     for i in range(n):
