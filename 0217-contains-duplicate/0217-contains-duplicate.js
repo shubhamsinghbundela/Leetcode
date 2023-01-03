@@ -3,13 +3,23 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    for(let i=0;i<nums.length;i++){
-        for(let j=i+1;j<nums.length;j++){
-            if(nums[i]==nums[j]){
-                return true;
-                break;
-            }
-        }
+  let obj={};
+  // let count=0;
+  nums.forEach(e=>{
+    if(e in obj){
+      obj[e]+=1;
+    }else{
+      obj[e]=1;
     }
-    return false;
+  })
+  
+  for(let key in obj){
+    if(obj[key]>1){
+      return true;
+      break;
+    }
+  }
+  
+  return false;
+  
 };
