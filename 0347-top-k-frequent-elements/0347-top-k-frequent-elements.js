@@ -15,8 +15,6 @@ var topKFrequent = function(nums, k) {
     for(let [num, freq] of freqMap) {
         bucket[freq] = (bucket[freq] || new Set()).add(num);
     }
-  // console.log(bucket)
-    
     for(let i = bucket.length-1; i >= 0; i--) {
         if(bucket[i]) result.push(...bucket[i]);
         if(result.length === k) break;
