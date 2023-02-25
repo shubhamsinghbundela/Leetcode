@@ -4,21 +4,22 @@
  * @return {number[]}
  */
 var topKFrequent = function(nums, k) {
-    let obj={}
+    let obj=new Map()
     for(let i=0;i<nums.length;i++){
-      if(obj[nums[i]]){
-        obj[nums[i]]++
+      if(obj.has(nums[i])){
+        obj.set(nums[i],obj.get(nums[i])+1)
       }else{
-        obj[nums[i]]=1
+        obj.set(nums[i],1)
       }
     }
-  // console.log(obj)
-  let arr=Object.entries(obj).sort((a,b)=>b[1]-a[1]).slice(0,k)
-  // console.log(arr)
-  let arr1=[]
+  // console.log(obj.get(1))
+  
+   let arr=Array.from(obj).sort((a,b)=>b[1]-a[1]).slice(0,k)
+   // console.log(arr)
+    let arr1=[]
   for(let i=0;i<arr.length;i++){
     arr1.push(+arr[i][0])
   }
-  // console.log(arr1)
     return arr1
+  
 };
