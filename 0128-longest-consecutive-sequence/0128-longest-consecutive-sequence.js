@@ -3,25 +3,24 @@
  * @return {number}
  */
 var longestConsecutive = function(nums) {
-  let maxScore=1;
-  let count=1;
+  let nums1=new Set(nums);
+  let maxCount=1;
   if(nums.length==0){
-      return 0;
+      return 0
   }
-  let nums1=nums.sort((a,b)=>a-b)
-  console.log(nums1)
-  for(let i=1;i<nums1.length;i++){
-    if(nums[i]==nums[i-1]){
-      continue;
-    } 
-    if(nums[i]==nums[i-1]+1){
-      count+=1
+  for(let num of [...nums1]){
+    if(nums1.has(num-1)){
       continue;
     }
-    maxScore=Math.max(maxScore,count);
-    count=1
-    
+    let count=1;
+    let current=num
+    const isStreak = () =>nums1.has(current+1)
+    while(isStreak()){
+      count++
+      current++
+    }
+    maxCount=Math.max(maxCount,count);
   }
-  return Math.max(maxScore,count)
+  return maxCount
   
 };
