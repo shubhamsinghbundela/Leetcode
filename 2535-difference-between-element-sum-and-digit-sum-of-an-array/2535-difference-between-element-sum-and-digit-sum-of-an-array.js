@@ -7,12 +7,19 @@ var differenceOfSum = function(nums) {
   for(let i=0;i<nums.length;i++){
     elemSum+=nums[i];
   }
-  // console.log(elemSum)
-  let nums1=nums.join('').split('');
+  console.log(elemSum)
   let digitSum=0
-  for(let i=0;i<nums1.length;i++){
-    digitSum+=Number(nums1[i])
+  for(let i=0;i<nums.length;i++){
+    if(String(nums[i]).length>1){
+        while(nums[i]>0){
+            let rem=nums[i]%10;
+            digitSum+=rem;
+            nums[i]=Math.floor(nums[i]/10);
+        }
+    }else{
+        digitSum+=nums[i];
+    }
   }
-  // console.log(digitSum)
+  console.log(digitSum)
   return elemSum-digitSum
 };
