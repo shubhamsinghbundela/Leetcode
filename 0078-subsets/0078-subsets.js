@@ -9,10 +9,10 @@ var subsets = function(nums) {
     let arr = [];
     for(let j=0;j<n;j++){
       if((i&(1<<j))>0){
-        arr.push(nums[j])
+        arr.push(nums[j]);
       }
     }
-   powerSet.push(arr)
+   powerSet.push(arr);
   }
-  return powerSet
+  return powerSet;
 };
