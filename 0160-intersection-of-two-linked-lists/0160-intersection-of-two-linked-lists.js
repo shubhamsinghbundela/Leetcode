@@ -12,19 +12,43 @@
  * @return {ListNode}
  */
 var getIntersectionNode = function(headA, headB) {
-   // console.log(headA);
-    // console.log(headB);
-    let set = new Set();
+    let nodeA = headA;
+    let nodeB = headB;
+   let countNodesLL1 = 0;
     while(headA){
-        set.add(headA);
         headA=headA.next;
+        countNodesLL1++;
     }
-    // console.log(headA);
+    // console.log(countNodesLL1);
+    let countNodesLL2 = 0;
     while(headB){
-        if(set.has(headB)){
-            return headB;
-        }
         headB=headB.next;
+        countNodesLL2++;
     }
-    return null;
+    // console.log(countNodesLL2);
+    let countDiff;
+    if(countNodesLL1>countNodesLL2){
+        countDiff=countNodesLL1-countNodesLL2;
+        while(countDiff!=0){
+            nodeA=nodeA.next;
+            countDiff--;
+        }
+    }else{
+        countDiff=countNodesLL2-countNodesLL1;
+        while(countDiff!=0){
+            // console.log(countDiff);
+            nodeB=nodeB.next;
+            countDiff--;
+        }
+        console.log(nodeB)
+        // console.log(countDiff);
+    }
+    while(nodeA!=null){
+        if(nodeA===nodeB){
+            return nodeA;
+        }
+        nodeA=nodeA.next;
+        nodeB=nodeB.next;
+    }
+    return null
 };
