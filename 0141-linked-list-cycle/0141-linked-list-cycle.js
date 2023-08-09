@@ -11,14 +11,20 @@
  * @return {boolean}
  */
 var hasCycle = function(head) {
-    let map = new Map();
-    while(head){
-        if(map.has(head)){
+    let newNode={ val : -1, next : null };
+    if(head==null){
+        return false;
+    }
+    while(head.next!=null){
+        
+        if(head.next === newNode){
+            // console.log(head)
+            // console.log(newNode)
             return true;
-        }else{
-            map.set(head,head);
-            head=head.next;
         }
+        let temp = head.next;
+        head.next = newNode;
+        head = temp;
     }
     return false;
 };
