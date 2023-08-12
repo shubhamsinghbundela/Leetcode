@@ -11,20 +11,14 @@
  * @return {boolean}
  */
 var hasCycle = function(head) {
-    let newNode={ val : -1, next : null };
-    if(head==null){
-        return false;
-    }
-    while(head.next!=null){
-        
-        if(head.next === newNode){
-            // console.log(head)
-            // console.log(newNode)
+    let slow = head;
+    let fast = head;
+    while(fast!=null && fast.next!=null){
+        slow = slow.next;
+        fast = fast.next.next;
+        if(slow==fast){
             return true;
         }
-        let temp = head.next;
-        head.next = newNode;
-        head = temp;
     }
     return false;
 };
