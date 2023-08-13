@@ -11,13 +11,18 @@
  * @return {ListNode}
  */
 var detectCycle = function(head) {
-    let map = new Map();
-    while(head){
-        if(map.has(head)){
-            return head;
-        }else{
-            map.set(head,head);
-            head=head.next;
+    let slow = head;
+    let fast = head;
+    let entry = head;
+    while(fast!=null && fast.next!=null){
+        slow = slow.next;
+        fast = fast.next.next;
+        if(slow==fast){
+            while(slow != entry){
+                slow=slow.next;
+                entry=entry.next;
+            }
+            return entry;
         }
     }
     return null;
