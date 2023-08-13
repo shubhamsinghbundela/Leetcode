@@ -13,6 +13,7 @@ var deleteDuplicates = function(head) {
      if(!head) return null;
     let prev = head;
     let cur = head.next;
+    console.log(head)
     while(prev){
         if(cur === null) return head;
         if(cur.val === prev.val){
