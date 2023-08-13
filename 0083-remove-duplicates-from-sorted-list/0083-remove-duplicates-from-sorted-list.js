@@ -22,5 +22,4 @@ var deleteDuplicates = function(head) {
         }
         cur=cur.next;
     }
-    console.log(prev);
 };
