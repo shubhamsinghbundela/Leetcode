@@ -24,7 +24,7 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
 </div>
 <h1 align="center">LeetCode</h1>-->
 	
- ## LeetCode Stats
+<!-- ## LeetCode Stats
 <div align="center">
 
 <p align="center" dir="auto">
@@ -33,7 +33,7 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
         </a>
 
 </p> 
-</div>
+</div>-->
 
 ## Optimizations
 
