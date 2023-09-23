@@ -2,7 +2,7 @@
 
 Implementation of stack using Linked List
 
-```javascript
+
 class Node{
   constructor(data){
     this.data=data;
@@ -56,4 +56,5 @@ stack.pop();
 stack.pop();
 stack.pop();
 // stack.pop();
-```
+
+
