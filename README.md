@@ -11,7 +11,7 @@
 </br>
 
 
-This repo contains all of my personal LeetCode solutions. The coding solutions provided within this repo are entirely provided by me, [Shubham Sigdar](https://leetcode.com/shubhamsigdar/).
+This repo contains all of my personal LeetCode solutions. The coding solutions provided within this repo are entirely provided by me, [Shubham Kumar Singh](https://leetcode.com/shubhamsigdar/).
 
 _All solutions were made with the sole intent of solving the corresponding LeetCode challenge. Solutions may not be as efficient as possible._
 
