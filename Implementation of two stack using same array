@@ -1,0 +1,60 @@
+Implementation of two stack using same array 
+
+TC:  for push and pop O(1) 
+
+class StackImplementation{
+  constructor(size){
+    this.size=size;
+    this.arr=new Array(size);
+    this.top1=-1;
+    this.top2=size;
+  }
+  push1(element){
+    // console.log(this.top1)
+    if(this.top2-this.top1-1>0){
+      this.arr[++this.top1] = element;
+    }else{
+      console.log("stack overflow")
+    }
+    
+  }
+  push2(element){
+    if(this.top2-this.top1-1>0){
+      this.arr[--this.top2] = element;
+    }else{
+      console.log("stack overflow")
+    }
+  }
+  pop1(){
+    if(this.top1>=0){
+      this.arr[this.top1]=null;
+      --this.top1;
+    }else{
+      console.log("stack underflow")
+    }
+  }
+  pop2(){
+    if(this.top2<=this.size-1){
+      this.arr[this.top2]=null;
+      ++this.top2;
+    }else{
+      console.log("stack underflow")
+    }
+  }
+  
+}
+
+let stack = new StackImplementation(5);
+stack.push1(1)
+stack.push2(2)
+stack.push2(3)
+stack.push2(4)
+stack.push2(5)
+stack.push2(6) //stack overflow
+stack.pop1();
+stack.pop1(); //stack underflow
+stack.pop2(); 
+stack.pop2(); 
+stack.pop2(); 
+stack.pop2(); 
+stack.pop2(); //stack underflow
