@@ -1,0 +1,16 @@
+function stockPrice(SP){
+  let stack = [];
+  stack.push(0); //[0]
+  let spanValue=[];
+  spanValue.push(1);
+  for(let i=1;i<SP.length;i++){
+    while(stack.length!==0 && SP[stack[stack.length-1]]<=SP[i]){
+      stack.pop();
+   }
+    spanValue[i]=stack.length===0?i+1:i-stack[stack.length-1];
+    stack.push(i);
+  }
+  console.log(spanValue)
+}
+stockPrice([60,80,180,40,120,105]) // [1,2,3,1,2,1]
+stockPrice([100,200,600,50,80]) // [1,2,3,1,2]

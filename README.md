@@ -3,7 +3,7 @@
 <div align="center">
 <a href = 'https://leetcode.com/shubhamsigdar/'><img src="https://github.com/CrutchTheClutch/LeetCode/raw/master/logo.png" width="450" height="auto"/></a>
 
- ![Language](https://img.shields.io/badge/Language-Java-orange.svg?logo=Python&logoColor=yellow)
+ ![Language](https://img.shields.io/badge/Language-JavaScript-orange.svg?logo=Python&logoColor=yellow)
 [![Author](https://img.shields.io/badge/Author-Shubham%20Sigdar-blue.svg?style=flat)](https://leetcode.com/shubhamsigdar/)
 
 </div>
@@ -11,7 +11,7 @@
 </br>
 
 
-This repo contains all of my personal LeetCode solutions. The coding solutions provided within this repo are entirely provided by me, [Shubham Sigdar](https://leetcode.com/shubhamsigdar/).
+This repo contains all of my personal LeetCode solutions. The coding solutions provided within this repo are entirely provided by me, [Shubham Kumar Singh](https://leetcode.com/shubhamsigdar/).
 
 _All solutions were made with the sole intent of solving the corresponding LeetCode challenge. Solutions may not be as efficient as possible._
 
@@ -24,7 +24,7 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
 </div>
 <h1 align="center">LeetCode</h1>-->
 	
- ## LeetCode Stats
+<!-- ## LeetCode Stats
 <div align="center">
 
 <p align="center" dir="auto">
@@ -33,7 +33,7 @@ _All solutions were made with the sole intent of solving the corresponding LeetC
         </a>
 
 </p> 
-</div>
+</div>-->
 
 ## Optimizations
 

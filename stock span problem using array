@@ -1,0 +1,20 @@
+TC: O(n^2), SC: O(n)
+
+function stockPrice(SP){
+  let spanValue=[];
+  spanValue.push(1);
+  for(let i=1;i<SP.length;i++){
+    for(let j=i-1;j>=0;j--){
+      if(SP[j]<=SP[i]){
+        sum=i+1;
+      }else{
+        sum=i-j;
+        break;
+      }
+    }
+    spanValue.push(sum);
+  }
+  console.log(spanValue);
+}
+stockPrice([60,80,180,40,120,105]) // [1,2,3,1,2,1]
+stockPrice([100,200,600,50,80]) // [1,2,3,1,2]
