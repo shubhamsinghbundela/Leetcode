@@ -11,10 +11,18 @@
  * @return {number}
  */
 var maxDepth = function(root) {
-    if(root==null){
-        return 0;
+     if (!root) return 0;
+    let level=0;
+    let queue=[root];
+    while(queue.length){
+        let size = queue.length;
+        while(size){
+            let temp = queue.shift();
+            size-=1;
+            if(temp.left) queue.push(temp.left);
+            if(temp.right) queue.push(temp.right);
+        }
+        level+=1;
     }
-    let leftSubtree = maxDepth(root.left);
-    let rightSubtree = maxDepth(root.right);
-    return 1 + Math.max(leftSubtree, rightSubtree);
+    return level
 };
