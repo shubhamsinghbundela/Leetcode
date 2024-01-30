@@ -4,7 +4,7 @@
 <a href = 'https://leetcode.com/shubhamsigdar/'><img src="https://github.com/CrutchTheClutch/LeetCode/raw/master/logo.png" width="450" height="auto"/></a>
 
  ![Language](https://img.shields.io/badge/Language-JavaScript-orange.svg?logo=Python&logoColor=yellow)
-[![Author](https://img.shields.io/badge/Author-Shubham%20Sigdar-blue.svg?style=flat)](https://leetcode.com/shubhamsigdar/)
+[![Author](https://img.shields.io/badge/Author-Shubham%20Sigdar-blue.svg?style=flat)](https://leetcode.com/shubhamsinghbundela/)
 
 </div>
 </br>
