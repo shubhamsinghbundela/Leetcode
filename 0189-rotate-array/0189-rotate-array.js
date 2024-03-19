@@ -11,17 +11,17 @@ var rotate = function(nums, k) {
   k = k % n;
   if (k > n)
     return;
-  for(let i=n-k;i<n;i++){
+  for(let i=0;i<n-k;i++){
     temp.push(nums[i]);
   }
-  // console.log(temp); //[5,6,7], [3,99]
-  for(let i=n-1-k;i>=0;i--){
-    nums[i+k]=nums[i];
-  }
-  // console.log(nums); //[1,2,3,1,2,3,4], [-1,-100,-1,-100]
+  console.log(temp); //[[1,2,3,4], [-1,-100]
   for(let i=0;i<k;i++){
+    nums[i]=nums[n-k+i];
+  }
+  console.log(nums); //[5,6,7,4,5,6,7], [3,99,3,99]
+  for(let i=k;i<n;i++){
     // console.log(i)
-    nums[i]=temp[i];
+    nums[i]=temp[i-k];
   }
   // console.log(nums);
   return nums;
